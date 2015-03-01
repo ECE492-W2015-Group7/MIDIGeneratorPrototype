@@ -19,6 +19,10 @@ entity midiOut is
 		-- reset interface
 		reset_n		:	in std_logic;
 		
+		-- clock for midiOut
+		
+		clk_midi : in std_logic;
+		
 		-- conduit interface for midi out jack
 		coe_midiOut			:	out std_logic;
 		
@@ -36,18 +40,14 @@ architecture avalon of midiOut is
 signal currentBit	: std_logic;
 
 begin
-
-	write_to_seg:process(avs_s0_write_n) is
+	process(avs_s0_write_n)
 	begin
-		if avs_s0_write_n = '0' then
-			if currentBit = '0' then
-				currentBit<='1';
-			else 
-				currentBit <= '0';
-			end if;
+		if falling_edge(avs_s0_write_n) then
+			currentBit <= avs_s0_writedata(0);
 		end if;
 	end process;
-	coe_midiOut<=currentBit;
+	coe_midiOut <= currentBit;
+	
 end avalon;
 
 

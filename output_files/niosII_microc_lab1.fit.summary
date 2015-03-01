@@ -1,14 +1,14 @@
-Fitter Status : Successful - Sat Feb 28 20:07:51 2015
+Fitter Status : Successful - Sun Mar 01 15:19:25 2015
 Quartus II 32-bit Version : 12.1 Build 243 01/31/2013 SP 1.33 SJ Full Version
 Revision Name : niosII_microc_lab1
 Top-level Entity Name : niosII_microc_lab1
 Family : Cyclone II
 Device : EP2C35F672C6
 Timing Models : Final
-Total logic elements : 2,984 / 33,216 ( 9 % )
-    Total combinational functions : 2,788 / 33,216 ( 8 % )
-    Dedicated logic registers : 1,637 / 33,216 ( 5 % )
-Total registers : 1782
+Total logic elements : 2,973 / 33,216 ( 9 % )
+    Total combinational functions : 2,780 / 33,216 ( 8 % )
+    Dedicated logic registers : 1,636 / 33,216 ( 5 % )
+Total registers : 1781
 Total pins : 109 / 475 ( 23 % )
 Total virtual pins : 0
 Total memory bits : 142,336 / 483,840 ( 29 % )

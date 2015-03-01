@@ -2,8 +2,8 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>ucosii</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>28-Feb-2015 8:26:57 PM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1425180417417</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>1-Mar-2015 3:20:18 PM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1425248418175</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>C:\Users\qsjiang\Documents\Github\MIDIGeneratorPrototype\software\MIDIGenerator_bsp</BspGeneratedLocation>
         <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>C:\Users\qsjiang\Documents\Github\MIDIGeneratorPrototype\niosII_system.sopcinfo</SopcDesignFile>

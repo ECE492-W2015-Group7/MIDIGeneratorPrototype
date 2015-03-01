@@ -67,7 +67,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
   </table>
   <table class="blueBar">
    <tr>
-    <td class="l">2015.02.28.20:06:35</td>
+    <td class="l">2015.03.01.15:18:04</td>
     <td class="r">Datasheet</td>
    </tr>
   </table>
@@ -1587,7 +1587,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
        </tr>
        <tr>
         <td class="parametername">timestamp</td>
-        <td class="parametervalue">1425179195</td>
+        <td class="parametervalue">1425248284</td>
        </tr>
        <tr>
         <td class="parametername">AUTO_CLK_CLOCK_RATE</td>
@@ -1620,7 +1620,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
        </tr>
        <tr>
         <td class="parametername">TIMESTAMP</td>
-        <td class="parametervalue">1425179195</td>
+        <td class="parametervalue">1425248284</td>
        </tr>
       </table>
      </td>
@@ -2234,7 +2234,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
        <a href="#module_clk_0">clk_0</a>
       </td>
       <td class="from">clk_reset&#160;&#160;</td>
-      <td class="main" rowspan="41">altpll_0</td>
+      <td class="main" rowspan="44">altpll_0</td>
      </tr>
      <tr>
       <td class="to">&#160;&#160;inclk_interface_reset</td>
@@ -2419,6 +2419,22 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
       <td></td>
       <td></td>
       <td class="to">&#160;&#160;clk</td>
+     </tr>
+     <tr style="height:6px">
+      <td></td>
+     </tr>
+     <tr>
+      <td></td>
+      <td></td>
+      <td class="from">c1&#160;&#160;</td>
+      <td class="neighbor" rowspan="2">
+       <a href="#module_frequencyDivider_0">frequencyDivider_0</a>
+      </td>
+     </tr>
+     <tr>
+      <td></td>
+      <td></td>
+      <td class="to">&#160;&#160;clock_in</td>
      </tr>
      <tr style="height:6px">
       <td></td>
@@ -3669,6 +3685,68 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
     </tr>
    </table>
   </div>
+  <a name="module_frequencyDivider_0"> </a>
+  <div>
+   <hr/>
+   <h2>frequencyDivider_0</h2>frequencyDivider v1.0
+   <br/>
+   <div class="greydiv">
+    <table class="connectionboxes">
+     <tr>
+      <td class="neighbor" rowspan="2">
+       <a href="#module_altpll_0">altpll_0</a>
+      </td>
+      <td class="from">c1&#160;&#160;</td>
+      <td class="main" rowspan="4">frequencyDivider_0</td>
+     </tr>
+     <tr>
+      <td class="to">&#160;&#160;clock_in</td>
+     </tr>
+     <tr>
+      <td></td>
+      <td></td>
+      <td class="from">clock_out&#160;&#160;</td>
+      <td class="neighbor" rowspan="2">
+       <a href="#module_midiOut_0">midiOut_0</a>
+      </td>
+     </tr>
+     <tr>
+      <td></td>
+      <td></td>
+      <td class="to">&#160;&#160;clk_midi</td>
+     </tr>
+    </table>
+   </div>
+   <br/>
+   <br/>
+   <table class="flowbox">
+    <tr>
+     <td class="parametersbox">
+      <h2>Parameters</h2>
+      <table>
+       <tr>
+        <td class="parametername">AUTO_CLOCK_IN_CLOCK_RATE</td>
+        <td class="parametervalue">50000000</td>
+       </tr>
+       <tr>
+        <td class="parametername">deviceFamily</td>
+        <td class="parametervalue">UNKNOWN</td>
+       </tr>
+       <tr>
+        <td class="parametername">generateLegacySim</td>
+        <td class="parametervalue">false</td>
+       </tr>
+      </table>
+     </td>
+    </tr>
+   </table>&#160;&#160;
+   <table class="flowbox">
+    <tr>
+     <td class="parametersbox">
+      <h2>Software Assignments</h2>(none)</td>
+    </tr>
+   </table>
+  </div>
   <a name="module_midiOut_0"> </a>
   <div>
    <hr/>
@@ -3681,10 +3759,22 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
        <a href="#module_altpll_0">altpll_0</a>
       </td>
       <td class="from">c1&#160;&#160;</td>
-      <td class="main" rowspan="10">midiOut_0</td>
+      <td class="main" rowspan="13">midiOut_0</td>
      </tr>
      <tr>
       <td class="to">&#160;&#160;clock</td>
+     </tr>
+     <tr style="height:6px">
+      <td></td>
+     </tr>
+     <tr>
+      <td class="neighbor" rowspan="2">
+       <a href="#module_frequencyDivider_0">frequencyDivider_0</a>
+      </td>
+      <td class="from">clock_out&#160;&#160;</td>
+     </tr>
+     <tr>
+      <td class="to">&#160;&#160;clk_midi</td>
      </tr>
      <tr style="height:6px">
       <td></td>
@@ -3728,6 +3818,10 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
        <tr>
         <td class="parametername">AUTO_CLOCK_CLOCK_RATE</td>
         <td class="parametervalue">50000000</td>
+       </tr>
+       <tr>
+        <td class="parametername">AUTO_CLK_MIDI_CLOCK_RATE</td>
+        <td class="parametervalue">0</td>
        </tr>
        <tr>
         <td class="parametername">deviceFamily</td>
