@@ -1,0 +1,10 @@
+
+**** Build of configuration Nios II for project MIDIGeneratorPrototype ****
+
+make all 
+Info: Building ../MIDIGeneratorPrototype_bsp/
+make --no-print-directory -C ../MIDIGeneratorPrototype_bsp/
+[BSP build complete]
+[MIDIGeneratorPrototype build complete]
+
+**** Build Finished ****

@@ -36,7 +36,7 @@ module niosII_system_sysid_qsys_0 (
 
   wire    [ 31: 0] readdata;
   //control_slave, which is an e_avalon_slave
-  assign readdata = address ? 1424220598 : 0;
+  assign readdata = address ? 1425179195 : 0;
 
 endmodule
 

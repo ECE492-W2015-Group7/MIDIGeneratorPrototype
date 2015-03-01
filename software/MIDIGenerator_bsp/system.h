@@ -2,9 +2,9 @@
  * system.h - SOPC Builder system and BSP software package information
  *
  * Machine generated for CPU 'nios2_qsys_0' in SOPC Builder design 'niosII_system'
- * SOPC Builder design path: C:/Users/qsjiang/Documents/Github/ECE492Research/MIDIGeneratorPrototype/niosII_system.sopcinfo
+ * SOPC Builder design path: C:/Users/qsjiang/Documents/Github/MIDIGeneratorPrototype/niosII_system.sopcinfo
  *
- * Generated: Tue Feb 17 19:13:12 MST 2015
+ * Generated: Sat Feb 28 20:26:57 MST 2015
  */
 
 /*
@@ -133,6 +133,7 @@
 #define __ALTERA_UP_AVALON_CHARACTER_LCD
 #define __ALTERA_UP_AVALON_SRAM
 #define __ALTPLL
+#define __MIDIOUT
 
 
 /*
@@ -191,7 +192,7 @@
  */
 
 #define ALT_MODULE_CLASS_character_lcd_0 altera_up_avalon_character_lcd
-#define CHARACTER_LCD_0_BASE 0x1109060
+#define CHARACTER_LCD_0_BASE 0x1109064
 #define CHARACTER_LCD_0_IRQ -1
 #define CHARACTER_LCD_0_IRQ_INTERRUPT_CONTROLLER_ID -1
 #define CHARACTER_LCD_0_NAME "/dev/character_lcd_0"
@@ -252,6 +253,20 @@
 #define JTAG_UART_0_TYPE "altera_avalon_jtag_uart"
 #define JTAG_UART_0_WRITE_DEPTH 64
 #define JTAG_UART_0_WRITE_THRESHOLD 8
+
+
+/*
+ * midiOut_0 configuration
+ *
+ */
+
+#define ALT_MODULE_CLASS_midiOut_0 midiOut
+#define MIDIOUT_0_BASE 0x1109060
+#define MIDIOUT_0_IRQ -1
+#define MIDIOUT_0_IRQ_INTERRUPT_CONTROLLER_ID -1
+#define MIDIOUT_0_NAME "/dev/midiOut_0"
+#define MIDIOUT_0_SPAN 4
+#define MIDIOUT_0_TYPE "midiOut"
 
 
 /*
@@ -375,7 +390,7 @@
 #define SYSID_QSYS_0_IRQ_INTERRUPT_CONTROLLER_ID -1
 #define SYSID_QSYS_0_NAME "/dev/sysid_qsys_0"
 #define SYSID_QSYS_0_SPAN 8
-#define SYSID_QSYS_0_TIMESTAMP 1424220598
+#define SYSID_QSYS_0_TIMESTAMP 1425179195
 #define SYSID_QSYS_0_TYPE "altera_avalon_sysid_qsys"
 
 

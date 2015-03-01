@@ -33,8 +33,7 @@ library ieee;
 		
 		-- Green leds on board
 		LEDG		: out DE2_LED_GREEN;
-		
-		-- LCD on board
+		GPIO_1	: out std_logic_vector (0 downto 0);
 		LCD_BLON	: out std_logic;
 		LCD_ON	: out std_logic;
 		LCD_DATA	: inout DE2_LCD_DATA_BUS;
@@ -104,7 +103,8 @@ architecture structure of niosII_microc_lab1 is
             character_lcd_0_external_interface_BLON : out   std_logic;                                        -- BLON
             character_lcd_0_external_interface_EN   : out   std_logic;                                        -- EN
             character_lcd_0_external_interface_RS   : out   std_logic;                                        -- RS
-            character_lcd_0_external_interface_RW   : out   std_logic                                         -- RW
+            character_lcd_0_external_interface_RW   : out   std_logic;                                         -- RW
+				midiout_0_conduit_end_0_export			 : out 	std_logic
         );
     end component niosII_system;
 
@@ -152,8 +152,9 @@ begin
             character_lcd_0_external_interface_BLON => LCD_BLON, 
             character_lcd_0_external_interface_EN   => LCD_EN,   
             character_lcd_0_external_interface_RS   => LCD_RS,   
-            character_lcd_0_external_interface_RW   => LCD_RW    
-        );
+            character_lcd_0_external_interface_RW   => LCD_RW,
+				midiout_0_conduit_end_0_export			 => GPIO_1(0)
+				);
 
 end structure;
 

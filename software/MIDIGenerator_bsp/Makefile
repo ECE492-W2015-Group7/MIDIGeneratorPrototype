@@ -101,7 +101,7 @@ ACDS_VERSION := 12.1sp1
 # BUILD_NUMBER: 243
 
 SETTINGS_FILE := settings.bsp
-SOPC_FILE := C:/Users/qsjiang/Documents/Github/ECE492Research/MIDIGeneratorPrototype/niosII_system.sopcinfo
+SOPC_FILE := C:/Users/qsjiang/Documents/Github/MIDIGeneratorPrototype/niosII_system.sopcinfo
 
 #-------------------------------------------------------------------------------
 #                             TOOL & COMMAND DEFINITIONS

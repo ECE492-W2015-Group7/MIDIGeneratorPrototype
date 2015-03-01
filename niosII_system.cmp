@@ -26,7 +26,8 @@
 			character_lcd_0_external_interface_BLON : out   std_logic;                                        -- BLON
 			character_lcd_0_external_interface_EN   : out   std_logic;                                        -- EN
 			character_lcd_0_external_interface_RS   : out   std_logic;                                        -- RS
-			character_lcd_0_external_interface_RW   : out   std_logic                                         -- RW
+			character_lcd_0_external_interface_RW   : out   std_logic;                                        -- RW
+			midiout_0_conduit_end_0_export          : out   std_logic                                         -- export
 		);
 	end component niosII_system;
 

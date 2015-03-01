@@ -87,11 +87,11 @@ ACDS_VERSION := 12.1sp1
 
 # Quartus Generated JDI File. Required for resolving node instance ID's with 
 # design component names. 
-JDI_FILE := C:/Users/qsjiang/Documents/Github/ECE492Research/MIDIGeneratorPrototype/niosII_microc_lab1.jdi
+JDI_FILE := C:/Users/qsjiang/Documents/Github/MIDIGeneratorPrototype/niosII_microc_lab1.jdi
 
 # Qsys--generated SOPCINFO file. Required for resolving node instance ID's with 
 # design component names. 
-SOPCINFO_FILE := C:/Users/qsjiang/Documents/Github/ECE492Research/MIDIGeneratorPrototype/niosII_system.sopcinfo
+SOPCINFO_FILE := C:/Users/qsjiang/Documents/Github/MIDIGeneratorPrototype/niosII_system.sopcinfo
 
 # Big-Endian operation. 
 # setting BIG_ENDIAN is false
@@ -156,9 +156,9 @@ SOPC_SYSID_FLAG += --sidp=0x1109058
 ELF_PATCH_FLAG  += --sidp 0x1109058
 
 # The SOPC Timestamp 
-# setting SOPC_TIMESTAMP is 1424220598
-SOPC_SYSID_FLAG += --timestamp=1424220598
-ELF_PATCH_FLAG  += --timestamp 1424220598
+# setting SOPC_TIMESTAMP is 1425179195
+SOPC_SYSID_FLAG += --timestamp=1425179195
+ELF_PATCH_FLAG  += --timestamp 1425179195
 
 # Small-footprint (polled mode) driver none 
 # setting altera_avalon_jtag_uart_driver.enable_small_driver is false

@@ -2,11 +2,11 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>ucosii</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>18-Feb-2015 8:20:39 PM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1424316039190</BspGeneratedUnixTimeStamp>
-        <BspGeneratedLocation>C:\Users\qsjiang\Documents\Github\ECE492Research\MIDIGeneratorPrototype\software\MIDIGenerator_bsp</BspGeneratedLocation>
+        <BspGeneratedTimeStamp>28-Feb-2015 8:26:57 PM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1425180417417</BspGeneratedUnixTimeStamp>
+        <BspGeneratedLocation>C:\Users\qsjiang\Documents\Github\MIDIGeneratorPrototype\software\MIDIGenerator_bsp</BspGeneratedLocation>
         <BspSettingsFile>settings.bsp</BspSettingsFile>
-        <SopcDesignFile>C:\Users\qsjiang\Documents\Github\ECE492Research\MIDIGeneratorPrototype\niosII_system.sopcinfo</SopcDesignFile>
+        <SopcDesignFile>C:\Users\qsjiang\Documents\Github\MIDIGeneratorPrototype\niosII_system.sopcinfo</SopcDesignFile>
         <JdiFile>default</JdiFile>
         <Cpu>nios2_qsys_0</Cpu>
         <SchemaVersion>1.9</SchemaVersion>
@@ -1745,8 +1745,14 @@
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
+                <slaveDescriptor>midiOut_0</slaveDescriptor>
+                <addressRange>0x01109060 - 0x01109063</addressRange>
+                <addressSpan>4</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
                 <slaveDescriptor>character_lcd_0</slaveDescriptor>
-                <addressRange>0x01109060 - 0x01109061</addressRange>
+                <addressRange>0x01109064 - 0x01109065</addressRange>
                 <addressSpan>2</addressSpan>
                 <attributes/>
         </MemoryMap>

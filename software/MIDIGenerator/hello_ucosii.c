@@ -27,10 +27,14 @@ char * getMappedNote(int laserNumber){
 
 void handleLaserStatusChange(int previousStatus, int currentStatus){
 	int i;
-	int noteType; //0 = off 1 = on
+	unsigned noteType; //0 = off 1 = on
 	//Find bits that are different
 	//XOR: 100 ^ 110 = 010
 	int differentBits = previousStatus^currentStatus;
+	int* midiOutPointer = (int*) MIDIOUT_0_BASE;
+	int midiData;
+
+
 	for (i=0;i<NUMBER_OF_LASER;i++){
 		/*
 		printf("(1<<i): %i\n",(1 << i) );
@@ -42,9 +46,14 @@ void handleLaserStatusChange(int previousStatus, int currentStatus){
 
 			noteType = ((currentStatus &  (1 << i)) ==  (1 << i)) ?  1: 0;
 
+			midiData =  (0<<27) + (5<<21) + (1<<20) + (0<<19) + (5<<11) + (1<<10) + (0<<9) + (0<<1) +1;
 			printf("Note %i\n",i);
 			printf("NoteType %i\n",noteType);
+			printf("MidiData %u\n",midiData);
 
+			if(i==0){
+				*midiOutPointer = noteType;
+			}
 		}
 	}
 
