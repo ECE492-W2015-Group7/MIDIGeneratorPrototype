@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for niosII_microc_lab1
-Sun Mar 01 15:19:33 2015
+Sun Mar 01 17:51:02 2015
 Quartus II 32-bit Version 12.1 Build 243 01/31/2013 Service Pack 1.33 SJ Full Version
 
 
@@ -276,7 +276,7 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 ; Property                        ; Setup ; Hold ;
 +---------------------------------+-------+------+
 ; Illegal Clocks                  ; 0     ; 0    ;
-; Unconstrained Clocks            ; 2     ; 2    ;
+; Unconstrained Clocks            ; 3     ; 3    ;
 ; Unconstrained Input Ports       ; 50    ; 50   ;
 ; Unconstrained Input Port Paths  ; 55    ; 55   ;
 ; Unconstrained Output Ports      ; 98    ; 98   ;
@@ -290,7 +290,7 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 Info: *******************************************************************
 Info: Running Quartus II 32-bit TimeQuest Timing Analyzer
     Info: Version 12.1 Build 243 01/31/2013 Service Pack 1.33 SJ Full Version
-    Info: Processing started: Sun Mar 01 15:19:31 2015
+    Info: Processing started: Sun Mar 01 17:51:00 2015
 Info: Command: quartus_sta niosII_microc_lab1 -c niosII_microc_lab1
 Info: qsta_default_script.tcl version: #1
 Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
@@ -446,6 +446,7 @@ Info (332164): Evaluating HDL-embedded SDC commands
         Info (332166): set_clock_groups -asynchronous -group {altera_reserved_tck}
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'niosII_microc_lab1.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Warning (332060): Node: CLOCK_50 was determined to be a clock but was found without an associated clock assignment.
+Warning (332060): Node: niosII_system:u0|frequencyDivider:frequencydivider_0|clk31250Hz_s was determined to be a clock but was found without an associated clock assignment.
 Warning (332060): Node: niosII_system:u0|altera_avalon_sc_fifo:midiout_0_s0_translator_avalon_universal_slave_0_agent_rsp_fifo|mem_used[1] was determined to be a clock but was found without an associated clock assignment.
 Warning (332056): PLL cross checking found inconsistent PLL clock settings:
     Warning (332056): Node: u0|altpll_0|sd1|pll|clk[0] was found missing 1 generated clock that corresponds to a base clock with a period of: 20.000
@@ -464,6 +465,7 @@ Info (332146): Worst-case minimum pulse width slack is 97.778
 Info (332001): The selected device family is not supported by the report_metastability command.
 Info: Analyzing Fast Model
 Warning (332060): Node: CLOCK_50 was determined to be a clock but was found without an associated clock assignment.
+Warning (332060): Node: niosII_system:u0|frequencyDivider:frequencydivider_0|clk31250Hz_s was determined to be a clock but was found without an associated clock assignment.
 Warning (332060): Node: niosII_system:u0|altera_avalon_sc_fifo:midiout_0_s0_translator_avalon_universal_slave_0_agent_rsp_fifo|mem_used[1] was determined to be a clock but was found without an associated clock assignment.
 Warning (332056): PLL cross checking found inconsistent PLL clock settings:
     Warning (332056): Node: u0|altpll_0|sd1|pll|clk[0] was found missing 1 generated clock that corresponds to a base clock with a period of: 20.000
@@ -479,9 +481,9 @@ Info (332146): Worst-case minimum pulse width slack is 97.778
 Info (332001): The selected device family is not supported by the report_metastability command.
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
-Info: Quartus II 32-bit TimeQuest Timing Analyzer was successful. 0 errors, 11 warnings
-    Info: Peak virtual memory: 379 megabytes
-    Info: Processing ended: Sun Mar 01 15:19:33 2015
+Info: Quartus II 32-bit TimeQuest Timing Analyzer was successful. 0 errors, 13 warnings
+    Info: Peak virtual memory: 366 megabytes
+    Info: Processing ended: Sun Mar 01 17:51:02 2015
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 

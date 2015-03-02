@@ -46,13 +46,18 @@ void handleLaserStatusChange(int previousStatus, int currentStatus){
 
 			noteType = ((currentStatus &  (1 << i)) ==  (1 << i)) ?  1: 0;
 
-			midiData =  (3<<30) + (0<<27) + (5<<21) + (1<<20) + (0<<19) + (5<<11) + (1<<10) + (0<<9) + (0<<1) +1;
+			midiData =  (0<<27) + (5<<21) + (1<<20) + (0<<19) + (5<<11) + (1<<10) + (0<<9) + (0<<1) +1;
 			printf("Note %i\n",i);
 			printf("NoteType %i\n",noteType);
 			printf("MidiData %u\n",midiData);
 
 			if(i==0){
-				*midiOutPointer = noteType;
+				if (noteType=1){
+					*midiOutPointer = midiData;
+				}
+				else{
+					*midiOutPointer = 0;
+				}
 			}
 		}
 	}
