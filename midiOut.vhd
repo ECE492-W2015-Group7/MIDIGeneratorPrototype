@@ -48,7 +48,35 @@ begin
 		if falling_edge(avs_s0_write_n) then
 			--save the midi data
 			--midi data is only 30bits ignore the first two bits.
-			midiDataInput <= avs_s0_writedata(29 downto 0);	
+			midiDataInput(29 downto 0) <= avs_s0_writedata(29 downto 0);	
+		
+			midiDataInput(28) <= avs_s0_writedata(21);
+			midiDataInput(27) <= avs_s0_writedata(22);
+			midiDataInput(26) <= avs_s0_writedata(23);
+			midiDataInput(25) <= avs_s0_writedata(24);
+			midiDataInput(24) <= avs_s0_writedata(25);
+			midiDataInput(23) <= avs_s0_writedata(26);
+			midiDataInput(22) <= avs_s0_writedata(27);
+			midiDataInput(21) <= avs_s0_writedata(28);
+
+			midiDataInput(18) <= avs_s0_writedata(11);
+			midiDataInput(17) <= avs_s0_writedata(12);
+			midiDataInput(16) <= avs_s0_writedata(13);
+			midiDataInput(15) <= avs_s0_writedata(14);
+			midiDataInput(14) <= avs_s0_writedata(15);
+			midiDataInput(13) <= avs_s0_writedata(16);
+			midiDataInput(12) <= avs_s0_writedata(17);
+			midiDataInput(11) <= avs_s0_writedata(18);
+
+			midiDataInput(8) <= avs_s0_writedata(1);
+			midiDataInput(7) <= avs_s0_writedata(2);
+			midiDataInput(6) <= avs_s0_writedata(3);
+			midiDataInput(5) <= avs_s0_writedata(4);
+			midiDataInput(4) <= avs_s0_writedata(5);
+			midiDataInput(3) <= avs_s0_writedata(6);
+			midiDataInput(2) <= avs_s0_writedata(7);
+			midiDataInput(1) <= avs_s0_writedata(8);
+			
 		end if;
 	end process;
 	
