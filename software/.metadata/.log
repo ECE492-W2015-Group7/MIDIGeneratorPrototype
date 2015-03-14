@@ -4037,3 +4037,16 @@ java.lang.Exception: System timestamp mismatch - connected: "1425766956", expect
 
 !ENTRY com.altera.sbtgui.launch 1 0 2015-03-07 18:27:31.353
 !MESSAGE Executing: [C:/altera/12.1sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1109058 --id=0x0 --timestamp=1425766956 /cygdrive/c/Users/qsjiang/Documents/Github/MIDIGeneratorPrototype/software/MIDIGenerator/MIDIGenerator.elf]
+!SESSION 2015-03-08 14:55:06.255 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_CA
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-03-08 14:55:43.769
+!MESSAGE Executing: [C:/altera/12.1sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1109058 --id=0x0 --timestamp=1425766956]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-03-08 14:55:45.532
+!MESSAGE Executing: [C:/altera/12.1sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1109058 --id=0x0 --timestamp=1425766956 /cygdrive/c/Users/qsjiang/Documents/Github/MIDIGeneratorPrototype/software/MIDIGenerator/MIDIGenerator.elf]

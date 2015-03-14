@@ -9343,3 +9343,23 @@ make --no-print-directory -C ../MIDIGenerator_bsp/
 [MIDIGenerator build complete]
 
 **** Build Finished ****
+
+**** Build of configuration Nios II for project MIDIGenerator ****
+
+make all 
+Info: Building ../MIDIGenerator_bsp/
+make --no-print-directory -C ../MIDIGenerator_bsp/
+[BSP build complete]
+[MIDIGenerator build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project MIDIGenerator ****
+
+make all 
+Info: Building ../MIDIGenerator_bsp/
+make --no-print-directory -C ../MIDIGenerator_bsp/
+[BSP build complete]
+[MIDIGenerator build complete]
+
+**** Build Finished ****

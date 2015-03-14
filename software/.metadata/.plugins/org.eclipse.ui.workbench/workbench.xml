@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="25" version="2.0">
+<workbench progressCount="32" version="2.0">
 <workbenchAdvisor/>
 <window height="860" maximized="true" width="1125" x="3" y="-19">
 <fastViewData fastViewLocation="1024"/>
@@ -31,18 +31,13 @@
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
-<part id="1"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="system.h" partName="system.h" path="C:/Users/qsjiang/Documents/Github/MIDIGeneratorPrototype/software/MIDIGenerator_bsp/system.h" title="system.h" tooltip="MIDIGenerator_bsp/system.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MIDIGenerator_bsp/system.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="8268" selectionTopPixel="3900"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="hello_ucosii.c" partName="hello_ucosii.c" path="C:/Users/qsjiang/Documents/Github/MIDIGeneratorPrototype/software/MIDIGenerator/hello_ucosii.c" title="hello_ucosii.c" tooltip="MIDIGenerator/hello_ucosii.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MIDIGenerator/hello_ucosii.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="midi_generator.c" partName="midi_generator.c" path="C:/Users/qsjiang/Documents/Github/MIDIGeneratorPrototype/software/MIDIGenerator/midi_generator.c" title="midi_generator.c" tooltip="MIDIGenerator/midi_generator.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MIDIGenerator/midi_generator.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1901" selectionTopPixel="746"/>
 </editor>
 </editors>
 <views>
@@ -66,16 +61,13 @@
 <element path="/MIDIGenerator"/>
 </expanded>
 <selection>
-<element path="/MIDIGenerator"/>
+<element path="/MIDIGenerator/midi_generator.c"/>
 </selection>
 </viewState>
 </view>
 <view id="org.eclipse.cdt.make.ui.views.MakeView" partName="Make Target"/>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
-<expanded>
-<category IMemento.internal.id="Errors"/>
-</expanded>
 <columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="493"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
@@ -104,7 +96,7 @@
 <viewState/>
 </view>
 </views>
-<perspectives activePart="org.eclipse.ui.views.ResourceNavigator" activePerspective="com.altera.sbtgui.ui.cPerspective">
+<perspectives activePart="org.eclipse.cdt.ui.editor.CEditor" activePerspective="com.altera.sbtgui.ui.cPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.cdt.internal.ui.CPerspectiveFactory" id="org.eclipse.cdt.ui.CPerspective" label="C/C++"/>
 <alwaysOnActionSet id="org.eclipse.mylyn.context.ui.actionSet"/>
@@ -328,6 +320,7 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/MIDIGenerator/hello_ucosii.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.make.editor" path="/MIDIGenerator/Makefile"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/MIDIGenerator_bsp/system.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/MIDIGenerator/midi_generator.c"/>
 </editors>
 <item historyLabel="hello_ucosii.c" index="0">
 <position info="not_deleted" x="2871" y="0"/>
@@ -448,8 +441,11 @@
 <item historyLabel="Makefile" index="14">
 <position info="not_deleted" x="4945" y="0"/>
 </item>
-<item active="true" historyLabel="system.h" index="15">
-<position info="not_deleted" x="7590" y="14"/>
+<item historyLabel="system.h" index="15">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item active="true" historyLabel="midi_generator.c" index="16">
+<position info="not_deleted" x="0" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
