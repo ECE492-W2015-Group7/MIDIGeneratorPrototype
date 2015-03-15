@@ -25,12 +25,15 @@ void inputPollingTask(void* pdata){
 
 	//=========== Start polling  ===========
 	while (1){
+
 		previousLaserStatus = laserStatus;
 		laserStatus = *laserStatusPointer;
+		laserStatus = pow(2,NUMBER_OF_LASER)-1 - laserStatus; //reverse all bits
 		if (previousLaserStatus!=laserStatus){
 			printLaserStatusOnLCD(char_lcd_dev,laserStatus);	//For debugging
 			handleLaserStatusChange(previousLaserStatus,laserStatus);
 		}
+		OSTimeDlyHMSM(0, 0, 0, 25);
 	}
 }
 
@@ -60,7 +63,7 @@ void handleLaserStatusChange(int previousStatus, int currentStatus){
  */
 int getMidiData(int laserIndex, int noteType){
 
-	int laserToPitchMappingTable[]={60,62,64,65,67,69,71,73};	//C4 D4 E4 F4 G4 A4 B4 C5
+	int laserToPitchMappingTable[]={60,62,64,65,67,69,71,72};	//C4 D4 E4 F4 G4 A4 B4 C5
 	int statusByte;
 	int pitchByte;
 	int velocityBtye;
@@ -81,7 +84,7 @@ int getMidiData(int laserIndex, int noteType){
 
 	printf("Note %i\n",laserIndex);
 	printf("NoteType %i\n",noteType);
-	printf("midiData %i\n",midiData);
+	//printf("midiData %i\n",midiData);
 	return midiData;
 }
 

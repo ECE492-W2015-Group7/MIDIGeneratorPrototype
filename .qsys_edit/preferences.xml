@@ -10,12 +10,12 @@
  </systemtable>
  <clocktable>
   <columns>
-   <clockname preferredWidth="387" />
-   <clocksource preferredWidth="387" />
-   <frequency preferredWidth="370" />
+   <clockname preferredWidth="382" />
+   <clocksource preferredWidth="381" />
+   <frequency preferredWidth="365" />
   </columns>
  </clocktable>
- <library expandedCategories="Project,Library" />
+ <library expandedCategories="Library,Project" />
  <window width="1440" height="860" x="0" y="0" />
  <hdlexample language="VERILOG" />
 </preferences>
