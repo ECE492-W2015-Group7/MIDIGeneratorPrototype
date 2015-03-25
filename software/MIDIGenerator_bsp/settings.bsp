@@ -2,8 +2,8 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>ucosii</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>14-Mar-2015 9:55:38 PM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1426391738474</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>24-Mar-2015 6:51:52 PM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1427244712904</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>C:\Users\qsjiang\Documents\Github\MIDIGeneratorPrototype\software\MIDIGenerator_bsp</BspGeneratedLocation>
         <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>C:\Users\qsjiang\Documents\Github\MIDIGeneratorPrototype\niosII_system.sopcinfo</SopcDesignFile>
@@ -1721,38 +1721,32 @@
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>green_leds</slaveDescriptor>
+                <slaveDescriptor>altpll_0</slaveDescriptor>
                 <addressRange>0x01109030 - 0x0110903F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>altpll_0</slaveDescriptor>
-                <addressRange>0x01109040 - 0x0110904F</addressRange>
-                <addressSpan>16</addressSpan>
-                <attributes/>
-        </MemoryMap>
-        <MemoryMap>
                 <slaveDescriptor>jtag_uart_0</slaveDescriptor>
-                <addressRange>0x01109050 - 0x01109057</addressRange>
+                <addressRange>0x01109040 - 0x01109047</addressRange>
                 <addressSpan>8</addressSpan>
                 <attributes>printable</attributes>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>sysid_qsys_0</slaveDescriptor>
-                <addressRange>0x01109058 - 0x0110905F</addressRange>
+                <addressRange>0x01109048 - 0x0110904F</addressRange>
                 <addressSpan>8</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>midiOut_0</slaveDescriptor>
-                <addressRange>0x01109060 - 0x01109063</addressRange>
+                <addressRange>0x01109050 - 0x01109053</addressRange>
                 <addressSpan>4</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>character_lcd_0</slaveDescriptor>
-                <addressRange>0x01109064 - 0x01109065</addressRange>
+                <addressRange>0x01109054 - 0x01109055</addressRange>
                 <addressSpan>2</addressSpan>
                 <attributes/>
         </MemoryMap>

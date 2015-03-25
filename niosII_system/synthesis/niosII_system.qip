@@ -2,7 +2,7 @@ set_global_assignment -entity "niosII_system" -library "niosII_system" -name IP_
 set_global_assignment -entity "niosII_system" -library "niosII_system" -name IP_TOOL_VERSION "12.1sp1"
 set_global_assignment -entity "niosII_system" -library "niosII_system" -name IP_TOOL_ENV "qsys"
 set_global_assignment -library "niosII_system" -name SOPCINFO_FILE [file join $::quartus(qip_path) "../../niosII_system.sopcinfo"]
-set_instance_assignment -entity "niosII_system" -library "niosII_system" -name SLD_INFO "QSYS_NAME niosII_system HAS_SOPCINFO 1 GENERATION_ID 1425246424"
+set_instance_assignment -entity "niosII_system" -library "niosII_system" -name SLD_INFO "QSYS_NAME niosII_system HAS_SOPCINFO 1 GENERATION_ID 1427240862"
 set_global_assignment -library "niosII_system" -name MISC_FILE [file join $::quartus(qip_path) "../../niosII_system.cmp"]
 set_global_assignment -name SYNTHESIS_ONLY_QIP ON
 set_global_assignment -library "niosII_system" -name MISC_FILE [file join $::quartus(qip_path) "../../niosII_system.qsys"]
@@ -45,7 +45,6 @@ set_global_assignment -library "niosII_system" -name VERILOG_FILE [file join $::
 set_global_assignment -library "niosII_system" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/niosII_system_sdram_0.v"]
 set_global_assignment -library "niosII_system" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/niosII_system_altpll_0.v"]
 set_global_assignment -library "niosII_system" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/niosII_system_switch.v"]
-set_global_assignment -library "niosII_system" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/niosII_system_green_leds.v"]
 set_global_assignment -library "niosII_system" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_up_character_lcd_communication.v"]
 set_global_assignment -library "niosII_system" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_up_character_lcd_initialization.v"]
 set_global_assignment -library "niosII_system" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/niosII_system_character_lcd_0.v"]
@@ -148,9 +147,6 @@ set_global_assignment -entity "niosII_system_altpll_0" -library "niosII_system" 
 set_global_assignment -entity "niosII_system_switch" -library "niosII_system" -name IP_TOOL_NAME "altera_avalon_pio"
 set_global_assignment -entity "niosII_system_switch" -library "niosII_system" -name IP_TOOL_VERSION "12.1"
 set_global_assignment -entity "niosII_system_switch" -library "niosII_system" -name IP_TOOL_ENV "qsys"
-set_global_assignment -entity "niosII_system_green_leds" -library "niosII_system" -name IP_TOOL_NAME "altera_avalon_pio"
-set_global_assignment -entity "niosII_system_green_leds" -library "niosII_system" -name IP_TOOL_VERSION "12.1"
-set_global_assignment -entity "niosII_system_green_leds" -library "niosII_system" -name IP_TOOL_ENV "qsys"
 set_global_assignment -entity "niosII_system_jtag_uart_0" -library "niosII_system" -name IP_TOOL_NAME "altera_avalon_jtag_uart"
 set_global_assignment -entity "niosII_system_jtag_uart_0" -library "niosII_system" -name IP_TOOL_VERSION "12.1"
 set_global_assignment -entity "niosII_system_jtag_uart_0" -library "niosII_system" -name IP_TOOL_ENV "qsys"

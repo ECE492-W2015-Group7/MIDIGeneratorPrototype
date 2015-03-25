@@ -2,16 +2,22 @@
 #include <string.h>
 #include "includes.h"
 #include "altera_up_avalon_character_lcd.h"
+#include "altera_avalon_pio_regs.h"
+#include "sys/alt_irq.h"
+
 #define   TASK_STACKSIZE       2048
 #define INPUT_POLLING_TASK_PRIORITY      1
 #define NUMBER_OF_LASER 8
 OS_STK    inputPollingTaskStack[TASK_STACKSIZE];
+OS_EVENT * laserStatusChanged;
+
 
 void inputPollingTask(void* pdata){
 	alt_up_character_lcd_dev * char_lcd_dev;
 	int laserStatus;
 	int* laserStatusPointer =(int* )SWITCH_BASE;
 	int previousLaserStatus;
+	INT8U err;
 
 	//=========== init LCD ===========
 	char_lcd_dev = alt_up_character_lcd_open_dev ("/dev/character_lcd_0");
@@ -25,7 +31,7 @@ void inputPollingTask(void* pdata){
 
 	//=========== Start polling  ===========
 	while (1){
-
+		OSSemPend(laserStatusChanged, 0, &err);
 		previousLaserStatus = laserStatus;
 		laserStatus = *laserStatusPointer;
 		laserStatus = pow(2,NUMBER_OF_LASER)-1 - laserStatus; //reverse all bits
@@ -33,7 +39,7 @@ void inputPollingTask(void* pdata){
 			printLaserStatusOnLCD(char_lcd_dev,laserStatus);	//For debugging
 			handleLaserStatusChange(previousLaserStatus,laserStatus);
 		}
-		OSTimeDlyHMSM(0, 0, 0, 25);
+		OSTimeDlyHMSM(0, 0, 0, 50);
 	}
 }
 
@@ -82,8 +88,6 @@ int getMidiData(int laserIndex, int noteType){
 	//formate: 	0 statusBtye 1	0 pitchByte 1	0 velocityByte 1
 	midiData = (statusByte<<21) + (1<<20) + (0<<19) + (pitchByte<<11) + (1<<10) + (0<<9) + (velocityBtye<<1) +(1<<0);
 
-	printf("Note %i\n",laserIndex);
-	printf("NoteType %i\n",noteType);
 	//printf("midiData %i\n",midiData);
 	return midiData;
 }
@@ -106,6 +110,13 @@ void printLaserStatusOnLCD(alt_up_character_lcd_dev * char_lcd_dev, int laserSta
 	alt_up_character_lcd_string(char_lcd_dev, message);
 }
 
+static void key_ISR( void * context) {
+	OSSemPost(laserStatusChanged);
+
+	//interrupt safe instructions...
+	//Acknowledge the IRQ : Clear the edgecapture register by writing a 1 to it
+	IOWR_ALTERA_AVALON_PIO_EDGE_CAP(SWITCH_BASE, 0xff);
+}
 int main(void){
 
 	OSTaskCreateExt(inputPollingTask,
@@ -117,7 +128,14 @@ int main(void){
 			TASK_STACKSIZE,
 			NULL,
 			0);
-
+	laserStatusChanged = OSSemCreate(0);
+	alt_ic_isr_register(SWITCH_IRQ_INTERRUPT_CONTROLLER_ID, //alt_u32 ic_id
+						SWITCH_IRQ, //alt_u32 irq
+						key_ISR, //alt_isr_func isr
+						NULL,
+						NULL);
+	//Setting interruptmask register to 1 enables key interrupts
+	IOWR_ALTERA_AVALON_PIO_IRQ_MASK(SWITCH_BASE,0xff);
 	OSStart();
 	return 0;
 }

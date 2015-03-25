@@ -18,7 +18,11 @@ obj/default/midi_generator.o: midi_generator.c \
   ../MIDIGenerator_bsp//HAL/inc/priv/alt_dev_llist.h \
   ../MIDIGenerator_bsp//HAL/inc/sys/alt_llist.h \
   ../MIDIGenerator_bsp//HAL/inc/sys/alt_alarm.h \
-  ../MIDIGenerator_bsp//HAL/inc/sys/alt_warning.h
+  ../MIDIGenerator_bsp//HAL/inc/sys/alt_warning.h \
+  ../MIDIGenerator_bsp//drivers/inc/altera_avalon_pio_regs.h \
+  ../MIDIGenerator_bsp//HAL/inc/io.h \
+  ../MIDIGenerator_bsp//HAL/inc/alt_types.h \
+  ../MIDIGenerator_bsp//HAL/inc/sys/alt_irq.h
 
 ../MIDIGenerator_bsp//HAL/inc/includes.h:
 
@@ -65,3 +69,11 @@ obj/default/midi_generator.o: midi_generator.c \
 ../MIDIGenerator_bsp//HAL/inc/sys/alt_alarm.h:
 
 ../MIDIGenerator_bsp//HAL/inc/sys/alt_warning.h:
+
+../MIDIGenerator_bsp//drivers/inc/altera_avalon_pio_regs.h:
+
+../MIDIGenerator_bsp//HAL/inc/io.h:
+
+../MIDIGenerator_bsp//HAL/inc/alt_types.h:
+
+../MIDIGenerator_bsp//HAL/inc/sys/alt_irq.h:

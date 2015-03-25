@@ -13,16 +13,16 @@
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="midiData" key="selection"/>
+		<item value="SWITCH_BIT_CLEARING_EDGE_REGISTER" key="selection"/>
 		<list key="findhistory">
+			<item value="SWITCH_BIT_CLEARING_EDGE_REGISTER"/>
+			<item value="SWITCH_BASE"/>
+			<item value="SWITCH_CAPTURE"/>
+			<item value="switch"/>
 			<item value="midiData"/>
 			<item value="midinote"/>
 			<item value="midi"/>
 			<item value="hello_ucosii"/>
-			<item value="hello_ucosii.c"/>
-			<item value="base"/>
-			<item value="switch"/>
-			<item value="lcd"/>
 		</list>
 		<list key="replacehistory">
 			<item value="laserStatus"/>

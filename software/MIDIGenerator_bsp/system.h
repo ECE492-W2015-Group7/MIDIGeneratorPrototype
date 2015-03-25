@@ -4,7 +4,7 @@
  * Machine generated for CPU 'nios2_qsys_0' in SOPC Builder design 'niosII_system'
  * SOPC Builder design path: C:/Users/qsjiang/Documents/Github/MIDIGeneratorPrototype/niosII_system.sopcinfo
  *
- * Generated: Sat Mar 14 21:55:38 MDT 2015
+ * Generated: Tue Mar 24 17:56:02 MDT 2015
  */
 
 /*
@@ -152,19 +152,19 @@
 #define ALT_NUM_INTERNAL_INTERRUPT_CONTROLLERS 1
 #define ALT_NUM_INTERRUPT_CONTROLLERS 1
 #define ALT_STDERR "/dev/jtag_uart_0"
-#define ALT_STDERR_BASE 0x1109050
+#define ALT_STDERR_BASE 0x1109040
 #define ALT_STDERR_DEV jtag_uart_0
 #define ALT_STDERR_IS_JTAG_UART
 #define ALT_STDERR_PRESENT
 #define ALT_STDERR_TYPE "altera_avalon_jtag_uart"
 #define ALT_STDIN "/dev/jtag_uart_0"
-#define ALT_STDIN_BASE 0x1109050
+#define ALT_STDIN_BASE 0x1109040
 #define ALT_STDIN_DEV jtag_uart_0
 #define ALT_STDIN_IS_JTAG_UART
 #define ALT_STDIN_PRESENT
 #define ALT_STDIN_TYPE "altera_avalon_jtag_uart"
 #define ALT_STDOUT "/dev/jtag_uart_0"
-#define ALT_STDOUT_BASE 0x1109050
+#define ALT_STDOUT_BASE 0x1109040
 #define ALT_STDOUT_DEV jtag_uart_0
 #define ALT_STDOUT_IS_JTAG_UART
 #define ALT_STDOUT_PRESENT
@@ -177,7 +177,7 @@
  *
  */
 
-#define ALTPLL_0_BASE 0x1109040
+#define ALTPLL_0_BASE 0x1109030
 #define ALTPLL_0_IRQ -1
 #define ALTPLL_0_IRQ_INTERRUPT_CONTROLLER_ID -1
 #define ALTPLL_0_NAME "/dev/altpll_0"
@@ -192,39 +192,12 @@
  */
 
 #define ALT_MODULE_CLASS_character_lcd_0 altera_up_avalon_character_lcd
-#define CHARACTER_LCD_0_BASE 0x1109064
+#define CHARACTER_LCD_0_BASE 0x1109054
 #define CHARACTER_LCD_0_IRQ -1
 #define CHARACTER_LCD_0_IRQ_INTERRUPT_CONTROLLER_ID -1
 #define CHARACTER_LCD_0_NAME "/dev/character_lcd_0"
 #define CHARACTER_LCD_0_SPAN 2
 #define CHARACTER_LCD_0_TYPE "altera_up_avalon_character_lcd"
-
-
-/*
- * green_leds configuration
- *
- */
-
-#define ALT_MODULE_CLASS_green_leds altera_avalon_pio
-#define GREEN_LEDS_BASE 0x1109030
-#define GREEN_LEDS_BIT_CLEARING_EDGE_REGISTER 0
-#define GREEN_LEDS_BIT_MODIFYING_OUTPUT_REGISTER 0
-#define GREEN_LEDS_CAPTURE 0
-#define GREEN_LEDS_DATA_WIDTH 8
-#define GREEN_LEDS_DO_TEST_BENCH_WIRING 0
-#define GREEN_LEDS_DRIVEN_SIM_VALUE 0x0
-#define GREEN_LEDS_EDGE_TYPE "NONE"
-#define GREEN_LEDS_FREQ 50000000u
-#define GREEN_LEDS_HAS_IN 0
-#define GREEN_LEDS_HAS_OUT 1
-#define GREEN_LEDS_HAS_TRI 0
-#define GREEN_LEDS_IRQ -1
-#define GREEN_LEDS_IRQ_INTERRUPT_CONTROLLER_ID -1
-#define GREEN_LEDS_IRQ_TYPE "NONE"
-#define GREEN_LEDS_NAME "/dev/green_leds"
-#define GREEN_LEDS_RESET_VALUE 0x0
-#define GREEN_LEDS_SPAN 16
-#define GREEN_LEDS_TYPE "altera_avalon_pio"
 
 
 /*
@@ -243,7 +216,7 @@
  */
 
 #define ALT_MODULE_CLASS_jtag_uart_0 altera_avalon_jtag_uart
-#define JTAG_UART_0_BASE 0x1109050
+#define JTAG_UART_0_BASE 0x1109040
 #define JTAG_UART_0_IRQ 1
 #define JTAG_UART_0_IRQ_INTERRUPT_CONTROLLER_ID 0
 #define JTAG_UART_0_NAME "/dev/jtag_uart_0"
@@ -261,7 +234,7 @@
  */
 
 #define ALT_MODULE_CLASS_midiOut_0 midiOut
-#define MIDIOUT_0_BASE 0x1109060
+#define MIDIOUT_0_BASE 0x1109050
 #define MIDIOUT_0_IRQ -1
 #define MIDIOUT_0_IRQ_INTERRUPT_CONTROLLER_ID -1
 #define MIDIOUT_0_NAME "/dev/midiOut_0"
@@ -358,20 +331,20 @@
 
 #define ALT_MODULE_CLASS_switch altera_avalon_pio
 #define SWITCH_BASE 0x1109020
-#define SWITCH_BIT_CLEARING_EDGE_REGISTER 0
+#define SWITCH_BIT_CLEARING_EDGE_REGISTER 1
 #define SWITCH_BIT_MODIFYING_OUTPUT_REGISTER 0
-#define SWITCH_CAPTURE 0
+#define SWITCH_CAPTURE 1
 #define SWITCH_DATA_WIDTH 8
 #define SWITCH_DO_TEST_BENCH_WIRING 0
 #define SWITCH_DRIVEN_SIM_VALUE 0x0
-#define SWITCH_EDGE_TYPE "NONE"
+#define SWITCH_EDGE_TYPE "ANY"
 #define SWITCH_FREQ 50000000u
 #define SWITCH_HAS_IN 1
 #define SWITCH_HAS_OUT 0
 #define SWITCH_HAS_TRI 0
-#define SWITCH_IRQ -1
-#define SWITCH_IRQ_INTERRUPT_CONTROLLER_ID -1
-#define SWITCH_IRQ_TYPE "NONE"
+#define SWITCH_IRQ 2
+#define SWITCH_IRQ_INTERRUPT_CONTROLLER_ID 0
+#define SWITCH_IRQ_TYPE "EDGE"
 #define SWITCH_NAME "/dev/switch"
 #define SWITCH_RESET_VALUE 0x0
 #define SWITCH_SPAN 16
@@ -384,13 +357,13 @@
  */
 
 #define ALT_MODULE_CLASS_sysid_qsys_0 altera_avalon_sysid_qsys
-#define SYSID_QSYS_0_BASE 0x1109058
+#define SYSID_QSYS_0_BASE 0x1109048
 #define SYSID_QSYS_0_ID 0
 #define SYSID_QSYS_0_IRQ -1
 #define SYSID_QSYS_0_IRQ_INTERRUPT_CONTROLLER_ID -1
 #define SYSID_QSYS_0_NAME "/dev/sysid_qsys_0"
 #define SYSID_QSYS_0_SPAN 8
-#define SYSID_QSYS_0_TIMESTAMP 1426391541
+#define SYSID_QSYS_0_TIMESTAMP 1427240925
 #define SYSID_QSYS_0_TYPE "altera_avalon_sysid_qsys"
 
 
